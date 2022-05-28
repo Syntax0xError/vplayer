@@ -11,7 +11,7 @@ Next, using VPLayer.js is simple just create container `<div id="video_player_co
 Next, initialize manually using the `VPLayer({})` function:
 
 ```js
-new VPLayer({
+VPLayer({
                 container: "#video_player_container", // (required) Main container
                 sources: [{
                       src: 'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
@@ -24,9 +24,9 @@ new VPLayer({
                 title: null, //  (Optional) Video title
                 poster: null, // (Optional) Video poster
                 logo: null, // (Optional) Add logo to right bottom of player
-                logoRedirection: // (Optional) Redirect to link onClick
+                logoRedirection: null, // (Optional) Redirect to link onClick
                 muted: false,
-                volume: 50,
+                volume: 0.5,
                 loop: false,
                 useForward: false, // (Optional) add a (10sec) forward button
                 usePip: false,
